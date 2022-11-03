@@ -1,19 +1,8 @@
 const eleSquares = document.querySelector('.squares');
+const eleStartScreen = document.querySelector('.start-screen');
+const eleSelector = document.querySelector('.selector');
 const eleButton = document.getElementById('button');
 const eleLevel = document.getElementById ('level');
-
-// for (i=1; i<=49; i++) {
-//     // eleSquares.innerHTML += `<div class="sq">${i}</div>`;
-//     const sq = document.createElement('div');
-//     sq.innerHTML += [i]
-//     sq.classList.add('sq');
-//     eleSquares.append(sq);
-
-//     sq.addEventListener('click', function(){
-//         this.classList.toggle('active');
-//     })
-// }
-
 
 function levelSelector(levelIndex){
     for (i=1; i<=levelIndex; i++){
@@ -42,8 +31,15 @@ function levelSelector(levelIndex){
 levelSelector (100);
 
 
+
 eleButton.addEventListener('click', function(){
+    eleSquares.classList.remove('hidden');
+    eleSelector.classList.remove('hidden');
+	eleStartScreen.classList.add('hidden');
     eleSquares.replaceChildren()
+
+    eleSquares.innerHTML = "";  
+
 
     let levelIndex
     if (eleLevel.value == 1){

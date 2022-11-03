@@ -1,6 +1,12 @@
 .grid{
     background-color: #7fffd4;
     padding: 8rem;
+	height: 90vh;
+	display: flex;
+}
+
+.start-screen{
+	margin: auto;
 }
 
 .squares {
@@ -21,4 +27,8 @@
 
 .active{
     background-color: #f0466f;
+}
+
+.hidden{
+	display: none;
 }

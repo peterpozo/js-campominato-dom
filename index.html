@@ -22,10 +22,9 @@
               <h1 class="fw-bold">Campo Minato</h1>
             </div>
             <div class="col-3">
-                <div class="row row-cols-auto align-items-center">
-                    <div class="col">
+                <div class="row row-cols-auto align-items-center justify-content-center">
+                    <div class="col selector hidden">
                         <select class="form-select form-select-sm" id="level" aria-label=".form-select-sm example">
-                            <option selected>Select Difficulty</option>
                             <option value="1">Easy</option>
                             <option value="2">Medium</option>
                             <option value="3">Pro</option>
@@ -40,7 +39,10 @@
         
     </nav>
     <div class="container-fluid grid">
-        <div class="squares d-flex justify-content-center"></div>
+        <div class="start-screen">
+			<h2>Benvenuto in Campo Minato</h2>
+		</div>
+        <div class="squares hidden"></div>
     </div>
     <div class="container text-center">
         <div class="row">
